@@ -1,4 +1,4 @@
-const Menu = (() => {
+export const Menu = (() => {
   
   const loadMenuPage = (arg) => {
   	contentDiv.innerHTML = arg;

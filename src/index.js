@@ -1,3 +1,7 @@
+import { Home } from "homepage";
+import { Contact } from "contactpage";
+import { Menu } from "menupage";
+
 const contentDiv = document.querySelector("#content");
 const navLinks = document.querySelectorAll(".nav-link");
 const homeContent = `<div class="container" id="home-section">
@@ -69,7 +73,7 @@ const contactContent = `<div class="container mt-5" id="contact-section">
 
 const Tools = (() => {
   const loadPage = () => {
-    loadHomePage();
+    loadHomePage(homeContent);
   }
 
   const changeTab = () => {
@@ -77,14 +81,17 @@ const Tools = (() => {
       element.addEventListener("click", (e) => {
         let clickedLink = e.target.innerHTML;
         if (clickedLink === "Home"){
-          Home.loadHomePage();
+          Home.loadHomePage(homeContent);
         }else if( clickedLink === "Menu"){
-          Menu.loadMenuPage();
+          Menu.loadMenuPage(menuContent);
         }else{
-          Contact.loadContactPage();
+          Contact.loadContactPage(contactContent);
         }
       });
     });
   }
   return { loadPage, changeTab };
 })();
+
+Tools.loadPage();
+Tools.changeTab();

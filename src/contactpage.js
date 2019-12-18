@@ -1,4 +1,4 @@
-const Contact = (() => {
+export const Contact = (() => {
 
   const loadContactPage = (arg) => {
   	contentDiv.innerHTML = arg;

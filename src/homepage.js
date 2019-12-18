@@ -1,4 +1,4 @@
-const Home = (() => {
+export const Home = (() => {
 
   const loadHomePage = (arg) => {
   	contentDiv.innerHTML = arg;
