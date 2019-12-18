@@ -66,3 +66,25 @@ const contactContent = `<div class="container mt-5" id="contact-section">
                   </div>
               </div>
           </div>`;
+
+const Tools = (() => {
+  const loadPage = () => {
+    loadHomePage();
+  }
+
+  const changeTab = () => {
+    navLinks.forEach((element) => {
+      element.addEventListener("click", (e) => {
+        let clickedLink = e.target.innerHTML;
+        if (clickedLink === "Home"){
+          Home.loadHomePage();
+        }else if( clickedLink === "Menu"){
+          Menu.loadMenuPage();
+        }else{
+          Contact.loadContactPage();
+        }
+      });
+    });
+  }
+  return { loadPage, changeTab };
+})();
