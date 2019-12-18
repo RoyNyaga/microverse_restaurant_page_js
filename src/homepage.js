@@ -1,7 +1,7 @@
 const Home = (() => {
 
   const loadHomePage = (arg) => {
-  	contentDiv.innerHTML = homeContent;
+  	contentDiv.innerHTML = arg;
   };
 
   return { loadHomePage };

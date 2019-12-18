@@ -1,7 +1,7 @@
 const Menu = (() => {
   
   const loadMenuPage = (arg) => {
-  	contentDiv.innerHTML = menuContent;
+  	contentDiv.innerHTML = arg;
   }
 
   return { loadMenuPage };

@@ -1,7 +1,7 @@
 const Contact = (() => {
 
   const loadContactPage = (arg) => {
-  	contentDiv.innerHTML = contactContent;
+  	contentDiv.innerHTML = arg;
   }
  
   return { loadContactPage };
