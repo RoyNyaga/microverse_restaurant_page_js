@@ -1,6 +1,6 @@
 const Contact = (() => {
 
-  const loadContactPage = () => {
+  const loadContactPage = (arg) => {
   	contentDiv.innerHTML = contactContent;
   }
  

@@ -1,6 +1,6 @@
 const Home = (() => {
 
-  const loadHomePage = () => {
+  const loadHomePage = (arg) => {
   	contentDiv.innerHTML = homeContent;
   };
 
