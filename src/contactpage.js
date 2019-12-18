@@ -1,7 +1,7 @@
 export const Contact = (() => {
-	const loadContactPage = (contentDiv, arg) => {
-		contentDiv.innerHTML = arg;
-	}; 
-	return { loadContactPage };
+  const loadContactPage = (contentDiv, arg) => {
+    contentDiv.innerHTML = arg;
+  }; 
+  return { loadContactPage };
 })();
 

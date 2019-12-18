@@ -74,7 +74,7 @@ const contactContent = `<div class="container mt-5" id="contact-section">
 const Tools = (() => {
   const loadPage = () => {
     Home.loadHomePage(contentDiv, homeContent);
-  }
+  };
 
   const changeTab = () => {
     navLinks.forEach((element) => {
@@ -89,7 +89,7 @@ const Tools = (() => {
         }
       });
     });
-  }
+  };
   return { loadPage, changeTab };
 })();
 
