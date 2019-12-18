@@ -6,3 +6,4 @@ files:
     - 'bower_components/*'
     - 'node_modules/*'
     - '.eslintrc.json'
+    - 'webpack.config.js'
