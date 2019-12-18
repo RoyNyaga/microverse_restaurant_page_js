@@ -1,0 +1,58 @@
+#overall-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../photos/backgroundpic.jpg)center/cover no-repeat;
+    height: 100vh;
+}
+
+#nav-section {
+    box-shadow: 5px 10px 10px black;
+    padding: 20px;
+}
+
+.nav-link {
+    color: #e83e8c;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: #9194a1;
+    background: #d3d4d9;
+    border: 2px solid #e83e8c;
+    border-radius: 30px;
+}
+
+#about-section {
+    width: 70%;
+    margin-top: 200px;
+}
+
+#about-grid {
+    padding: 20px;
+    background: #e9eaeca1;
+    border: 2px solid #e83e8c;
+    border-radius: 20px;
+}
+
+.about-divs {
+    width: 45%;
+}
+
+.about-card-h2 {
+    color: #e83e8c;
+}
+
+#home-main-div {
+    width: 70%;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+#home-main-pic {
+    height: 400px;
+}
+
+#contact-form {
+    background: #c70a6124;
+    padding: 50px;
+    border: 2px solid #f5c7db;
+    border-radius: 20px;
+}

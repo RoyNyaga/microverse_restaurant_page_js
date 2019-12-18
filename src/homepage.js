@@ -1,6 +1,6 @@
 export const Home = (() => {
 
-  const loadHomePage = (arg) => {
+  const loadHomePage = (contentDiv, arg) => {
   	contentDiv.innerHTML = arg;
   };
 

@@ -1,6 +1,6 @@
 export const Contact = (() => {
 
-  const loadContactPage = (arg) => {
+  const loadContactPage = (contentDiv, arg) => {
   	contentDiv.innerHTML = arg;
   }
  

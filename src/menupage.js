@@ -1,6 +1,6 @@
 export const Menu = (() => {
   
-  const loadMenuPage = (arg) => {
+  const loadMenuPage = (contentDiv, arg) => {
   	contentDiv.innerHTML = arg;
   }
 
