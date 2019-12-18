@@ -1,9 +1,9 @@
-import { Home } from "./homepage";
-import { Contact } from "./contactpage";
-import { Menu } from "./menupage";
+import { Home } from './homepage';
+import { Contact } from './contactpage';
+import { Menu } from './menupage';
 
-const contentDiv = document.querySelector("#content");
-const navLinks = document.querySelectorAll(".nav-link");
+const contentDiv = document.querySelector('#content');
+const navLinks = document.querySelectorAll('.nav-link');
 const homeContent = `<div class="container" id="home-section">
               <div class="card" id="home-main-div">
                   <img class="card-img-top" id="home-main-pic" src="../photos/homepage1.jpg" alt="Card image">
@@ -78,13 +78,13 @@ const Tools = (() => {
 
   const changeTab = () => {
     navLinks.forEach((element) => {
-      element.addEventListener("click", (e) => {
-        let clickedLink = e.target.innerHTML;
-        if (clickedLink === "Home"){
+      element.addEventListener('click', (e) => {
+        const clickedLink = e.target.innerHTML;
+        if (clickedLink === 'Home') {
           Home.loadHomePage(contentDiv, homeContent);
-        }else if( clickedLink === "Menu"){
+        } else if (clickedLink === 'Menu') {
           Menu.loadMenuPage(contentDiv, menuContent);
-        }else{
+        } else {
           Contact.loadContactPage(contentDiv, contactContent);
         }
       });
@@ -95,4 +95,3 @@ const Tools = (() => {
 
 Tools.loadPage();
 Tools.changeTab();
-
