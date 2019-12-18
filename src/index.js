@@ -95,3 +95,4 @@ const Tools = (() => {
 
 Tools.loadPage();
 Tools.changeTab();
+

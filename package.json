@@ -2,8 +2,8 @@
   "name": "microverse_restaurant_page_js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": { "start": "webpack" },
+  "private": true,
+  "scripts": { "start": "webpack --config webpack.config.js" },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RoyNyaga/microverse_restaurant_page_js.git"
